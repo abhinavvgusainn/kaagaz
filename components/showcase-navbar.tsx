@@ -33,7 +33,7 @@ xl:w-4/5
       <Link href="/">
       <Image
         src="/logo/logo.png"
-        alt="Bird Logo"
+        alt="Kaagaz Logo"
         width={1000}
         height={1000}
         className="w-28"

@@ -259,7 +259,7 @@ export default function Home() {
 
             <section className="overflow-hidden mt-10 md:w-4/5">
               <InfiniteMovingLogos
-                speed="slow"
+                speed="normal"
                 direction="left"
                 items={[
                   {
@@ -414,7 +414,7 @@ export default function Home() {
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 Bird. All Rights Reserved.
+          © 2025 Kaagaz. All Rights Reserved.
           <Link href="/" className="text-blue-500">
             Privacy Policy
           </Link>
