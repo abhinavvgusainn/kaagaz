@@ -42,23 +42,18 @@ xl:w-4/5
 
       <div className="absolute right-1/2 translate-x-1/2 transform">
         <div className="hidden md:flex gap-x-10 2xl:gap-x-10 items-center text-gray-700 font-medium text-lg ">
-          <Link
-            href="/showcase"
-            className="
-          hover:text-blue-500
-          "
-          >
-            Showcase
-          </Link>
-             <Link href="/" className="hover:text-blue-500">
-            Services
-          </Link>
-          <Link href="/" className="hover:text-blue-500">
-        Process
-          </Link>
-          <Link href="/" className="hover:text-blue-500">
-            Guarentees
-          </Link>
+          <Link href={"/"} className="hover:text-blue-500 transition-colors">
+              Home
+            </Link>
+            <Link href={"/showcase"} className="hover:text-blue-500 transition-colors">
+              Showcase
+            </Link>
+            <Link href={"/services"} className="hover:text-blue-500 transition-colors">
+              Services
+            </Link>
+            <Link href={"/story"} className="hover:text-blue-500 transition-colors">
+              Story
+            </Link>
   
         </div>
       </div>
@@ -67,7 +62,7 @@ xl:w-4/5
       <div className="flex items-center gap-x-4">
       <a href="tel:5193191562" className="hidden xl:flex">
               <button className="px-4 py-2  rounded-md flex items-center gap-x-3 ">
-            (519)-319-1562
+            (787)-830-2665
               </button>
             </a>
 

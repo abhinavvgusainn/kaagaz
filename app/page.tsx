@@ -5,72 +5,75 @@ import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-de
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { CoverDemo } from "@/components/demos/cover-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
-import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
+import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
+import { IconStarFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
-import { Link as ScrollLink, Element } from "react-scroll";
-import { IconStarFilled } from "@tabler/icons-react";
-import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
-import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
+import { Element, Link as ScrollLink } from "react-scroll";
 
+/* ─────────────────────────────────────────────
+   DATA
+───────────────────────────────────────────── */
 
-const services = [
+const CLIENTS = [
+  { name: "Shamiana", href: "#", category: "Food & Dining" },
+  { name: "Niwas", href: "#", category: "Hospitality" },
+  { name: "Elara Night", href: "#", category: "Events & Nightlife" },
+  { name: "Elara Stay and Resort", href: "#", category: "Hospitality" },
+  { name: "Break Lo", href: "#", category: "Food & Dining" },
+  { name: "Nilesh Bar & Cafe", href: "#", category: "Food & Dining" },
+  { name: "Arth Coffee House", href: "#", category: "Cafe" },
+  { name: "Dhungaar Rest", href: "#", category: "Food & Dining" },
+  { name: "Magnivibe", href: "#", category: "Lifestyle" },
+  { name: "Marutinandan Marmo", href: "#", category: "Materials" },
+  { name: "Emp. Marmo and Grani", href: "#", category: "Materials" },
+];
+
+const TESTIMONIALS = [
   {
-    icon: "/images/s_6.png",
-    title: "Web Design + Development",
-    description:
-      "Take your business to the next level with our web design and development services",
+    quote:
+      "We've been working with Kaagaz for over 8 months and they've been amazing. They've helped us grow our business and we couldn't be happier with the results.",
+    name: "Jordan Brisson",
+    role: "CEO, Arth Coffee House",
+    rating: 5,
   },
   {
-    icon: "/images/s_1.png",
-    title: "Search Engine Optimization",
-    description:
-      "Get your website to the top of search engine results with our SEO services",
+    quote:
+      "The team delivered a website that completely transformed how our guests experience our brand online. Bookings jumped 35% within six weeks of launch.",
+    name: "Priya Mehta",
+    role: "Director, Elara Stay and Resort",
+    rating: 5,
   },
   {
-    icon: "/images/s_5.png",
-    title: "Content Creation",
-    description:
-      "Boost your brand's online presence with our social media marketing services",
-  },
-  {
-    icon: "/images/s_3.png",
-    title: "Social Media Marketing",
-    description:
-      "Interact with your customers and increase sales with our email marketing services",
-  },
-  {
-    icon: "/images/s_4.png",
-    title: "Email Marketing",
-    description:
-      "With our content creation services, we help businesses drive results",
-  },
-  {
-    icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
-    description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+    quote:
+      "From concept to launch in three weeks. The Kaagaz team understood our vibe for Elara Night instantly — the microsite sold out our opening party.",
+    name: "Ravi Sharma",
+    role: "Founder, Elara Night",
+    rating: 5,
   },
 ];
+
+/* ─────────────────────────────────────────────
+   PAGE
+───────────────────────────────────────────── */
 
 export default function Home() {
   return (
     <div
-      className="overflow-clip 
- inset-0 
- -z-10 h-full w-full bg-[#fafafa]
-  bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
-   bg-[size:14px_24px]"
+      className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa]
+        bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
+        bg-[size:14px_24px]"
     >
+      {/* ── Navbar ── */}
       <Element
         name="top"
-        className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
-   xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
-   justify-between py-6 px-4 md:px-8 mx-6"
+        className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50
+          xl:w-4/5 2xl:w-[68%] bg-white flex items-center
+          justify-between py-6 px-4 md:px-8 mx-6 shadow-sm border border-neutral-100"
       >
         <Link href={"/"}>
           <Image
@@ -84,64 +87,38 @@ export default function Home() {
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-blue-500">
+            <Link href={"#"} className="hover:text-blue-500 transition-colors">
+              Home
+            </Link>
+            <Link href={"/showcase"} className="hover:text-blue-500 transition-colors">
               Showcase
             </Link>
-
-            <ScrollLink
-              to="services"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
+            <Link href={"/services"} className="hover:text-blue-500 transition-colors">
               Services
-            </ScrollLink>
-
-            <ScrollLink
-              to="process"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Process
-            </ScrollLink>
-
-            <ScrollLink
-              to="guarantees"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Guarantees
-            </ScrollLink>
+            </Link>
+            <Link href={"/story"} className="hover:text-blue-500 transition-colors">
+              Story
+            </Link>
           </div>
         </div>
 
         <div className="flex items-center gap-x-4">
-          <a href="tel:519400200" className="hidden lg:flex">
-            <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
+          <a href="tel:7878302665" className="hidden lg:flex">
+            <button className="px-4 py-2 rounded-md flex items-center gap-x-3 text-gray-600 hover:text-gray-900 transition-colors text-sm">
               (787)-830-2665
             </button>
           </a>
-
           <Link
             href={"/meeting"}
-            className="
-  py-3 
-  px-6
-  text-lg 
-  hover:bg-[#abcbff]
-  rounded-[6px]
-  border-2
-  border-black
-  text-white
-  bg-[#121212]
-  transition
-  duration-200
-     hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+            className="py-3 px-6 text-lg hover:bg-[#abcbff] rounded-[6px] border-2 border-black text-white bg-[#121212] transition duration-200
+              hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
           >
             Book a call
           </Link>
         </div>
       </Element>
 
+      {/* ── Hero ── */}
       <main className="md:pb-10">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
           <AnimatedShinyTextDemo />
@@ -149,109 +126,58 @@ export default function Home() {
           <h1>
             <CoverDemo />
           </h1>
-          <p
-            className="md:text-center
-           text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-500"
-          >
-            Schedule a call with us to discuss your project and get a quote in
-            minutes
+
+          <p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-500">
+            Schedule a call with us to discuss your project and get a quote in minutes
           </p>
 
-          <div
-            className="
-                 flex 
-                  md:justify-center 
-                  items-center 
-                  gap-x-4
-                   "
-          >
+          <div className="flex md:justify-center items-center gap-x-4">
             <Link
               href="/meeting"
-              className="py-3 
-            px-10
-            md:px-16
-      md:text-xl
-      hover:bg-[#abcbff] 
-      rounded-[6px]
-      border-2 
-      border-black 
-      dark:border-white 
-       bg-[#121212] 
-       text-white 
-       transition 
-       duration-200 
-       hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+              className="py-3 px-10 md:px-16 md:text-xl hover:bg-[#abcbff] rounded-[6px] border-2 border-black bg-[#121212] text-white transition duration-200
+                hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
             >
               Book a Call
             </Link>
             <Link
               href={"/showcase"}
-              className="
-              bg-white
-   py-3 
-   px-10
-   md:px-16
-      md:text-xl
-        border-4
-        border-black
-        rounded-[6px]
-        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
+              className="bg-white py-3 px-10 md:px-16 md:text-xl border-4 border-black rounded-[6px]
+                hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
             >
               Showcase
             </Link>
           </div>
 
+          {/* Capability pills */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
-              <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Design
-              </p>
-            </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
-              <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Development
-              </p>
-            </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
-              <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Marketing
-              </p>
-            </BoxReveal>
-            <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
-              <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-blue-500" />
-                Strategy
-              </p>
-            </BoxReveal>
+            {["Design", "Development", "Marketing", "Strategy"].map((cap) => (
+              <BoxReveal key={cap} boxColor={"#3b82f6"} duration={0.5}>
+                <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
+                  <PiCheckBold className="text-xl text-blue-500" />
+                  {cap}
+                </p>
+              </BoxReveal>
+            ))}
           </div>
 
+          {/* Trust bar */}
           <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
             <div className="md:w-2/5">
               <h1 className="text-2xl font-medium text-gray-600 w-4/5">
                 Trusted by fast moving brands worldwide
               </h1>
-
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
                   <h1 className="text-blue-500 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Happy Clients
-                    </p>
+                    <NumberTicker value={1000} />+
+                    <p className="text-gray-500 text-sm md:text-md">Happy Clients</p>
                   </h1>
                 </div>
-
-                <div className="w-px bg-gray-300 self-stretch"></div>
-
+                <div className="w-px bg-gray-300 self-stretch" />
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Projects Completed
-                    </p>
+                    <NumberTicker value={100} />+
+                    <p className="text-gray-500 text-sm md:text-md">Projects Completed</p>
                   </h1>
                 </div>
               </div>
@@ -262,14 +188,8 @@ export default function Home() {
                 speed="normal"
                 direction="left"
                 items={[
-                  {
-                    logo: "/logo/logo.png",
-                    name: "Logo",
-                  },
-                  {
-                    logo: "/logo/logo.png",
-                    name: "Logo",
-                  },
+                  { logo: "/logo/logo.png", name: "Logo" },
+                  { logo: "/logo/logo.png", name: "Logo" },
                 ]}
               />
             </section>
@@ -277,147 +197,242 @@ export default function Home() {
         </div>
       </main>
 
-      <Element name="services">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
-        <h1>
-          <WordPullUpDemo />
-        </h1>
-        <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-        All of our services are designed to help your business stand out 
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
-              >
-                <Image
-                  src={service.icon}
-                  width={10000}
-                  height={10000}
-                  className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
-                  alt="image"
-                />
-                <h1 className="text-xl font-medium">{service.title}</h1>
-                <p className="text-gray-500">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Element>
-
+      {/* ── Scroll velocity banner ── */}
       <section className="py-20">
         <ScrollBasedVelocityDemo />
       </section>
 
-      <Element name="process">
-        <main className="md:px-0 mx-6 md:mx-auto">
-        <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
-        Our{" "}
-            <span className="text-blue-500 flex gap-x-1 items-center">
-              {" "}
-              <Image
-                src={"/icons/squiggle.svg"}
-                width={10000}
-                height={10000}
-                className="w-6"
-                alt="image"
-              />
-              Creative
-              <Image
-                src={"/icons/star.svg"}
-                width={10000}
-                height={10000}
-                className="w-6 mb-8"
-                alt="image"
-              />
-            </span>{" "}
-            Process
-          </h1>
-
-          <p className="text-center 
-          py-4 md:w-1/2 mx-auto 
-          text-xl md:text-2xl text-gray-500">
-            All of our services are designed to help your business to get
-            noticed.
-          </p>
-
-          <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
-          <div className="w-full md:w-1/2 order-2 md:order-1">
-            <AnimatedBeamMultipleOutputDemo />
+      {/* ── Our Clients ── */}
+      <section className="py-16 md:py-24 xl:w-4/5 2xl:w-[68%] md:mx-auto px-6 md:px-0">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-2">
+              Who We've Worked With
+            </p>
+            <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900">
+              Our Clients
+            </h2>
           </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
-            <BoxRevealDemo />
-          </div>
-
-          </div>
-
-        </main>
-      </Element>
-
-      <section>
-        <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
-          <Image
-            src={"/logo/logo.png"}
-            width={10000}
-            height={10000}
-            className=" md:w-1/3 rounded-md"
-            alt="image"
-          />
-          <div className="flex flex-col gap-y-5 md:w-1/2">
-            <h1 className="text-lg md:text-2xl ">
-              &quot;We&apos;ve been working with Kaagaz for over 8 months and
-              they&apos;ve been amazing to work with. They&apos;ve helped us
-              grow our business and we couldn&apos;t be happier with the
-              results. &quot;
-            </h1>
-            <div className="flex items-center gap-x-1">
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-            </div>
-
-            <span className="text-xl font-medium">
-              Jordan, Brisson <br />
-              CEO, Arth coffee house
-            </span>
-          </div>
-        </main>
-      </section>
-
-      <Element name="guarentees">
-        <ShootingStarsAndStarsBackgroundDemo />
-      </Element>
-
-      <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
-      <LetsMakeThingsHappenSection />
-      </section>
-
-      <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
-        <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
-          <h1 className="text-3xl md:text-5xl font-medium ">
-            <Image
-              src={"/logo/logo.png"}
-              width={10000}
-              height={10000}
-              className="w-40"
-              alt="image"
-            />{" "}
-          </h1>
-          <p className="text-left  text-xl  text-gray-500">787-830-2665</p>
-          <p className="text-left  text-xl  text-gray-500">
-            admin@kaagazinfinity.com
+          <p className="text-neutral-500 text-sm md:max-w-xs md:text-right">
+            From local cafes to resort brands — we help businesses of every size grow their digital presence.
           </p>
         </div>
 
-        <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 Kaagaz. All Rights Reserved.
-          <Link href="/" className="text-blue-500">
-            Privacy Policy
-          </Link>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {CLIENTS.map((client, i) => (
+            <Link
+              key={client.name}
+              href={client.href}
+              className="group flex items-center justify-between bg-white border border-neutral-100 rounded-xl px-6 py-5
+                hover:border-neutral-300 hover:shadow-md transition-all duration-200"
+              style={{ animationDelay: `${i * 50}ms` }}
+            >
+              <div>
+                <p className="font-semibold text-neutral-900 group-hover:text-blue-500 transition-colors">
+                  {client.name}
+                </p>
+                <p className="text-xs text-neutral-400 mt-0.5">{client.category}</p>
+              </div>
+              <svg
+                className="w-4 h-4 text-neutral-300 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all duration-200 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ))}
+        </div>
+
+        {/* subtle bottom note */}
+        <p className="text-center text-neutral-400 text-xs mt-8">
+          + many more. <Link href="/showcase" className="text-blue-500 hover:underline">See our full showcase →</Link>
+        </p>
+      </section>
+
+      {/* ── Process ── */}
+      <Element name="process">
+        <main className="md:px-0 mx-6 md:mx-auto xl:w-4/5 2xl:w-[68%] py-10">
+          <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+            Our{" "}
+            <span className="text-blue-500 flex gap-x-1 items-center">
+              <Image src={"/icons/squiggle.svg"} width={10000} height={10000} className="w-6" alt="" />
+              Creative
+              <Image src={"/icons/star.svg"} width={10000} height={10000} className="w-6 mb-8" alt="" />
+            </span>{" "}
+            Process
+          </h1>
+          <p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+            All of our services are designed to help your business to get noticed.
+          </p>
+
+          <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <AnimatedBeamMultipleOutputDemo />
+            </div>
+            <div className="w-full md:w-1/2 order-1 md:order-2">
+              <BoxRevealDemo />
+            </div>
+          </div>
+        </main>
+      </Element>
+
+      {/* ── Testimonials ── */}
+      <section className="py-16 md:py-24 xl:w-4/5 2xl:w-[68%] md:mx-auto px-6 md:px-0">
+        <div className="text-center mb-12">
+          <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-2">
+            Social Proof
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900">
+            What our clients say
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {TESTIMONIALS.map((t, i) => (
+            <div
+              key={i}
+              className="bg-white border border-neutral-100 rounded-2xl p-7 flex flex-col gap-5 shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
+              {/* Stars */}
+              <div className="flex gap-x-1">
+                {Array.from({ length: t.rating }).map((_, j) => (
+                  <IconStarFilled key={j} className="text-yellow-400 w-4 h-4" />
+                ))}
+              </div>
+
+              <p className="text-neutral-700 text-sm leading-relaxed flex-1 italic">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+
+              <div className="flex items-center gap-3 pt-2 border-t border-neutral-50">
+                <div className="w-9 h-9 rounded-full bg-neutral-900 flex items-center justify-center text-white text-sm font-bold shrink-0">
+                  {t.name[0]}
+                </div>
+                <div>
+                  <p className="text-neutral-900 text-sm font-semibold">{t.name}</p>
+                  <p className="text-neutral-400 text-xs">{t.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Why us / mini pitch ── */}
+      <section className="py-12 xl:w-4/5 2xl:w-[68%] md:mx-auto px-6 md:px-0">
+        <div className="rounded-3xl bg-neutral-900 text-white px-8 md:px-14 py-14 relative overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "20px 20px" }}
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-3">Why Kaagaz</p>
+              <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
+                We treat your brand like it's our own.
+              </h2>
+              <p className="text-neutral-400 mt-5 leading-relaxed text-sm md:text-base">
+                No outsourcing, no middlemen. Every project is handled by our in-house team who are invested in your results — not just your invoice.
+              </p>
+              <Link
+                href="/services"
+                className="inline-block mt-8 px-6 py-3 bg-white text-neutral-900 rounded-xl text-sm font-semibold hover:bg-neutral-100 transition-colors"
+              >
+                Explore our services →
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { val: "60+", label: "Projects Delivered" },
+                { val: "98%", label: "Client Retention" },
+                { val: "48hr", label: "Avg. Response Time" },
+                { val: "4 yrs", label: "In Business" },
+              ].map((s) => (
+                <div key={s.label} className="bg-white/5 rounded-xl p-5">
+                  <p className="text-2xl font-bold text-white">{s.val}</p>
+                  <p className="text-neutral-400 text-xs mt-1">{s.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+        <LetsMakeThingsHappenSection />
+      </section>
+
+      {/* ── Footer ── */}
+      <footer className="bg-[#fafafa] py-10 px-6 md:px-0 md:mx-auto border-t">
+        <div className="xl:w-4/5 2xl:w-[68%] mx-auto">
+          <div className="flex flex-col md:flex-row md:items-start justify-between gap-10 pb-10 border-b border-neutral-100">
+            {/* Brand */}
+            <div className="flex flex-col gap-3 md:w-1/3">
+              <Image src={"/logo/logo.png"} width={1000} height={1000} className="w-36" alt="Logo" />
+              <p className="text-neutral-500 text-sm leading-relaxed">
+                A full-service digital studio helping brands grow through design, development, and strategy.
+              </p>
+              <div className="flex gap-3 mt-2">
+                {["Instagram", "LinkedIn", "Twitter"].map((s) => (
+                  <a
+                    key={s}
+                    href="#"
+                    className="text-xs text-neutral-400 border border-neutral-200 px-3 py-1.5 rounded-full hover:border-neutral-400 hover:text-neutral-700 transition-all"
+                  >
+                    {s}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Links */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 flex-1">
+              <div>
+                <p className="text-xs font-semibold text-neutral-900 uppercase tracking-widest mb-4">Pages</p>
+                {[
+                  { label: "Showcase", href: "/showcase" },
+                  { label: "Services", href: "/services" },
+                  { label: "Our Story", href: "/story" },
+                  { label: "Book a Call", href: "/meeting" },
+                ].map((l) => (
+                  <Link key={l.label} href={l.href} className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold text-neutral-900 uppercase tracking-widest mb-4">Services</p>
+                {["Web Design", "SEO", "Social Media", "Email Marketing", "PPC", "Content"].map((s) => (
+                  <Link key={s} href="/services" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                    {s}
+                  </Link>
+                ))}
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold text-neutral-900 uppercase tracking-widest mb-4">Contact</p>
+                <a href="tel:7878302665" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                  787-830-2665
+                </a>
+                <a href="mailto:admin@kaagazinfinity.com" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                  admin@kaagazinfinity.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-3 pt-8 text-sm text-neutral-400">
+            <span>© 2026 Kaagaz. All Rights Reserved.</span>
+            <div className="flex gap-4">
+              <Link href="/" className="hover:text-blue-500 transition-colors">Privacy Policy</Link>
+              <Link href="/" className="hover:text-blue-500 transition-colors">Terms of Service</Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
