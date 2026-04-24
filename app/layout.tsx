@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 const font = Space_Grotesk({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-
+        <SmoothCursor />
         {children}
         <Analytics />
 

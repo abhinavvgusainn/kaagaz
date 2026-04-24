@@ -20,17 +20,18 @@ import { Element, Link as ScrollLink } from "react-scroll";
 ───────────────────────────────────────────── */
 
 const CLIENTS = [
-  { name: "Shamiana", href: "#", category: "Food & Dining" },
+  { name: "Shamiana", href: "https://www.instagram.com/shamianaudaipur?igsh=MWNlYTk4NG1semtieQ==", category: "Food & Dining" },
   { name: "Niwas", href: "#", category: "Hospitality" },
   { name: "Elara Night", href: "#", category: "Events & Nightlife" },
   { name: "Elara Stay and Resort", href: "#", category: "Hospitality" },
   { name: "Break Lo", href: "#", category: "Food & Dining" },
   { name: "Nilesh Bar & Cafe", href: "#", category: "Food & Dining" },
-  { name: "Arth Coffee House", href: "#", category: "Cafe" },
+  { name: "Arth Coffee House", href: "https://www.instagram.com/arthcoffeehouse?igsh=ODFzNXRveDAyYnU0", category: "Cafe" },
   { name: "Dhungaar Rest", href: "#", category: "Food & Dining" },
   { name: "Magnivibe", href: "#", category: "Lifestyle" },
-  { name: "Marutinandan Marmo", href: "#", category: "Materials" },
+  { name: "Marutinandan Marmo", href: "https://www.Marutinandankelwa.com", category: "Materials" },
   { name: "Emp. Marmo and Grani", href: "#", category: "Materials" },
+  { name: "Syah", href: "https://www.instagram.com/syahudaipur?igsh=dzRraWUwbTA0NHpl", category: "Food & Dining" },
 ];
 
 const TESTIMONIALS = [
