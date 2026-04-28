@@ -482,7 +482,7 @@ const ServicesPage = () => {
                 {[
                   { val: "60+", label: "Projects Delivered" },
                   { val: "98%", label: "Client Retention" },
-                  { val: "48hr", label: "Avg. Response Time" },
+                  { val: "2hr", label: "Avg. Response Time" },
                   { val: "4yrs", label: "In Business" },
                 ].map((s) => (
                   <div key={s.label} className="bg-white/5 rounded-xl p-5">
