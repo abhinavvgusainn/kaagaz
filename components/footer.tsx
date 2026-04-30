@@ -10,16 +10,24 @@ const Footer = () => {
             <div className="flex flex-col gap-3 md:w-1/3">
               <Image src={"/logo/logo.png"} width={1000} height={1000} className="w-36" alt="Logo" />
               <p className="text-neutral-500 text-sm leading-relaxed">
-                A full-service digital studio helping brands grow through design, development, and strategy.
+                A full-service digital studio helping businesses grow  through design, development, and strategy.
               </p>
               <div className="flex gap-3 mt-2">
-                {["Instagram", "LinkedIn", "Twitter"].map((s) => (
+                {[{
+                  name: "Instagram",
+                  href: "https://www.instagram.com/kaagaz.udp/",
+                }, {
+                  name: "LinkedIn",
+                  href: "https://www.linkedin.com/company/kaagaz-infinity/",
+                }].map((social) => (
                   <a
-                    key={s}
-                    href="#"
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-xs text-neutral-400 border border-neutral-200 px-3 py-1.5 rounded-full hover:border-neutral-400 hover:text-neutral-700 transition-all"
                   >
-                    {s}
+                    {social.name}
                   </a>
                 ))}
               </div>
@@ -55,8 +63,8 @@ const Footer = () => {
                 <a href="tel:7878302665" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
                   787-830-2665
                 </a>
-                <a href="mailto:admin@kaagazinfinity.com" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
-                  admin@kaagazinfinity.com
+                <a href="mailto:chiragpaliwal53@gmail.com" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                  chiragpaliwal53@gmail.com
                 </a>
               </div>
             </div>
@@ -65,8 +73,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-3 pt-8 text-sm text-neutral-400">
             <span>© 2026 Kaagaz. All Rights Reserved.</span>
             <div className="flex gap-4">
-              <Link href="/" className="hover:text-blue-500 transition-colors">Privacy Policy</Link>
-              <Link href="/" className="hover:text-blue-500 transition-colors">Terms of Service</Link>
+              <Link href="/privacy-policy" className="hover:text-blue-500 transition-colors">Privacy Policy</Link>
+              <Link href="/terms-of-service" className="hover:text-blue-500 transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

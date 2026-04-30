@@ -26,7 +26,7 @@ const CLIENTS = [
   { name: "Elara Night", href: "#", category: "Events & Nightlife" },
   { name: "Elara Stay and Resort", href: "#", category: "Hospitality" },
   { name: "Break Lo", href: "#", category: "Food & Dining" },
-  { name: "Nilesh Bar & Cafe", href: "#", category: "Food & Dining" },
+  { name: "Neelansh Bar & Cafe", href: "#", category: "Food & Dining" },
   { name: "Arth Coffee House", href: "https://www.instagram.com/arthcoffeehouse?igsh=ODFzNXRveDAyYnU0", category: "Cafe" },
   { name: "Dhungaar Rest", href: "#", category: "Food & Dining" },
   { name: "Magnivibe", href: "#", category: "Lifestyle" },
@@ -39,22 +39,22 @@ const TESTIMONIALS = [
   {
     quote:
       "We've been working with Kaagaz for over 8 months and they've been amazing. They've helped us grow our business and we couldn't be happier with the results.",
-    name: "Jordan Brisson",
-    role: "CEO, Arth Coffee House",
+    name: "Dhruv Bansal",
+    // role: "CEO, Arth Coffee House",
     rating: 5,
   },
   {
     quote:
       "The team delivered a website that completely transformed how our guests experience our brand online. Bookings jumped 35% within six weeks of launch.",
     name: "Priya Mehta",
-    role: "Director, Elara Stay and Resort",
+    // role: "Director, Elara Stay and Resort",
     rating: 5,
   },
   {
     quote:
       "From concept to launch in three weeks. The Kaagaz team understood our vibe for Elara Night instantly — the microsite sold out our opening party.",
-    name: "Ravi Sharma",
-    role: "Founder, Elara Night",
+    name: "Nikhil Sharma",
+    // role: "Founder, Elara Night",
     rating: 5,
   },
 ];
@@ -171,14 +171,14 @@ export default function Home() {
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
                   <h1 className="text-blue-500 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} />+
+                    <NumberTicker value={10} />+
                     <p className="text-gray-500 text-sm md:text-md">Happy Clients</p>
                   </h1>
                 </div>
                 <div className="w-px bg-gray-300 self-stretch" />
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} />+
+                    <NumberTicker value={60} />+
                     <p className="text-gray-500 text-sm md:text-md">Projects Completed</p>
                   </h1>
                 </div>
@@ -190,8 +190,10 @@ export default function Home() {
                 speed="normal"
                 direction="left"
                 items={[
-                  { logo: "/logo/logo.png", name: "Logo" },
-                  { logo: "/logo/logo.png", name: "Logo" },
+                  { logo: "/clients/neelansh.png", name: "Logo" },
+                  { logo: "/clients/maruti.jpg", name: "Logo" },
+                  { logo: "/clients/shamiana.jpg", name: "Logo" },
+                  { logo: "/clients/syah.jpg", name: "Logo" },
                 ]}
               />
             </section>
@@ -314,7 +316,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-neutral-900 text-sm font-semibold">{t.name}</p>
-                  <p className="text-neutral-400 text-xs">{t.role}</p>
+                  {/* <p className="text-neutral-400 text-xs">{t.role}</p> */}
                 </div>
               </div>
             </div>
@@ -349,8 +351,8 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { val: "60+", label: "Projects Delivered" },
-                { val: "98%", label: "Client Retention" },
-                { val: "24hr", label: "Avg. Response Time" },
+                { val: "15+", label: "Team Members" },
+                { val: "48hr", label: "Avg. Response Time" },
                 { val: "8 months", label: "In Business" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/5 rounded-xl p-5">

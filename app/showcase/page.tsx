@@ -32,7 +32,7 @@ const PROJECTS: Project[] = [
     description:
       "Website for a premium marble and granite supplier — clean product showcase, material catalogue, and inquiry flow.",
     accent: "#c9b99a",
-    image: "/show/s_1.jpg",
+    image: "/show/s1.jpg",
     gradient: "linear-gradient(135deg,#1a1510 0%,#2e2418 50%,#1a1510 100%)",
     href: "https://www.marutinandankelwa.com/",
   },
@@ -43,8 +43,8 @@ const PROJECTS: Project[] = [
   year: "2026",
   description:
     "Website for a creative digital agency — modern layout, strong visual storytelling, and a streamlined inquiry experience.",
-  accent: "#c9b99a",
-  image: "/show/s_1.jpg",
+  accent: "#6366f1",
+  image: "/show/s2.png",
   gradient: "linear-gradient(135deg,#1a1510 0%,#2e2418 50%,#1a1510 100%)",
   href: "https://www.kaagazinfinity.com/",
 }
@@ -411,7 +411,7 @@ const Showcase = () => {
           <div className="mb-4 rounded-3xl bg-neutral-900 text-white px-8 md:px-14 py-14 overflow-hidden relative">
             <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
             <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-3">How We Work</p>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-12 max-w-xl">A studio process built for results — not just aesthetics.</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-12 max-w-xl">A process built for results — not just aesthetics.</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { num: "01", title: "Discovery", body: "We deep-dive into your brand, goals, and audience before writing a single line of code." },
@@ -445,10 +445,10 @@ const Showcase = () => {
                   "We've been working with Kaagaz for over 8 months and they've been amazing. They've helped us grow our business and we couldn't be happier with the results."
                 </p>
                 <div className="flex items-center gap-3 mt-auto pt-4 border-t border-neutral-50">
-                  <div className="w-9 h-9 rounded-full bg-neutral-900 flex items-center justify-center text-white text-sm font-bold shrink-0">J</div>
+                  <div className="w-9 h-9 rounded-full bg-neutral-900 flex items-center justify-center text-white text-sm font-bold shrink-0">D</div>
                   <div>
-                    <p className="text-neutral-900 text-sm font-semibold">Jordan Brisson</p>
-                    <p className="text-neutral-400 text-xs">CEO, Arth Coffee House</p>
+                    <p className="text-neutral-900 text-sm font-semibold">Dhruv Bansal</p>
+                    {/* <p className="text-neutral-400 text-xs">CEO, Arth Coffee House</p> */}
                   </div>
                 </div>
               </div>

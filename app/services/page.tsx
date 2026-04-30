@@ -18,7 +18,7 @@ const SERVICES = [
     title: "Web Design & Development",
     tagline: "Websites that convert visitors into customers.",
     description:
-      "We craft fast, accessible, and beautifully designed web experiences — from marketing sites to complex web apps. Every pixel is intentional, every interaction deliberate.",
+      "We craft fast, accessible, and beautifully designed web experiences — from marketing sites to complex web apps.",
     features: ["Custom UI/UX Design", "Next.js / React Development", "CMS Integration", "Performance Optimization", "Mobile-First Responsive"],
     accent: "#0a0a0a",
   },
@@ -102,7 +102,7 @@ const GUARANTEES = [
   {
     number: "05",
     title: "Results-Focused",
-    body: "We measure success by your KPIs — traffic, leads, conversions — not just how the design looks on a Dribbble shot.",
+    body: "We measure success by your KPIs — traffic, leads, conversions — not just how the design looks on Figma.",
     icon: "📈",
   },
   {
@@ -174,11 +174,7 @@ const FAQS = [
   },
   {
     q: "Do you work with clients outside India?",
-    a: "Absolutely. We've delivered work across three continents. All communication is async-friendly and we adapt to your timezone for live calls.",
-  },
-  {
-    q: "Can I upgrade from Starter to Growth later?",
-    a: "Yes. If your needs grow, you pay the difference — we don't make you start from scratch. Your existing work is always carried forward.",
+    a: "Absolutely. We work with clients globally. Communication is async-friendly, and we adapt to your timezone for calls.",
   },
   {
     q: "What do you need from me to get started?",
@@ -190,7 +186,7 @@ const FAQS = [
   },
   {
     q: "What platforms do you build on?",
-    a: "We primarily build on Next.js and React, with Webflow for no-code needs. For e-commerce we use Shopify. We choose the best tool for your specific goals.",
+    a: "Every project we deliver is built from scratch using modern technologies like Next.js, React, and Tailwind. No templates, no platform limitations—just fully custom solutions designed around your goals.",
   },
 ];
 
@@ -370,7 +366,7 @@ const ServicesPage = () => {
 
             <WordFadeIn
               className="text-3xl pt-2 lg:text-5xl font-semibold max-w-3xl mx-auto z-20"
-              words="Everything Your Brand Needs to Win"
+              words="Everything Your Brand Needs to Win Online"
             />
 
             <p className="text-xl md:text-2xl my-6 md:w-4/5 mx-auto text-gray-500">
@@ -444,7 +440,7 @@ const ServicesPage = () => {
                 {[
                   { step: "01", title: "Discovery Call", body: "We learn your business, goals, timeline, and budget in a 30-min call." },
                   { step: "02", title: "Proposal", body: "You receive a detailed scope, timeline, and fixed-price quote within 48 hrs." },
-                  { step: "03", title: "Design Sprint", body: "We present designs in Figma; you review, annotate, and approve." },
+                  { step: "03", title: "Design Sprint", body: "We present designs; you review, annotate, and approve." },
                   { step: "04", title: "Build & Review", body: "Development with weekly check-ins and a staging preview before launch." },
                   { step: "05", title: "Launch & Support", body: "Go live with confidence — we monitor and support you for 30 days." },
                 ].map((s) => (
@@ -481,9 +477,9 @@ const ServicesPage = () => {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { val: "60+", label: "Projects Delivered" },
-                  { val: "98%", label: "Client Retention" },
-                  { val: "2hr", label: "Avg. Response Time" },
-                  { val: "4yrs", label: "In Business" },
+                  { val: "15+", label: "Team Members" },
+                  { val: "48hr", label: "Avg. Response Time" },
+                  { val: "8 months", label: "In Business" },
                 ].map((s) => (
                   <div key={s.label} className="bg-white/5 rounded-xl p-5">
                     <p className="text-2xl font-bold text-white">{s.val}</p>
