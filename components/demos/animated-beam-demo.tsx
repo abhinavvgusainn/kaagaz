@@ -61,26 +61,6 @@ export function AnimatedBeamMultipleOutputDemo({
             />
           </Circle>
 
-          <Circle ref={div4Ref}>
-            <Image
-              src="/logo/claude.png"
-              width={100}
-              height={100}
-              className="w-8 h-8 object-contain"
-              alt="claude"
-            />
-          </Circle>
-
-          <Circle ref={div1Ref}>
-            <Image
-              src="/logo/next.png"
-              width={100}
-              height={100}
-              className="w-8 h-8 object-contain"
-              alt="next"
-            />
-          </Circle>
-
           <Circle ref={div2Ref}>
             <Image
               src="/logo/react.png"
@@ -98,6 +78,26 @@ export function AnimatedBeamMultipleOutputDemo({
               height={100}
               className="w-8 h-8 object-contain"
               alt="figma"
+            />
+          </Circle>
+
+          <Circle ref={div4Ref}>
+            <Image
+              src="/logo/claude.png"
+              width={100}
+              height={100}
+              className="w-8 h-8 object-contain"
+              alt="claude"
+            />
+          </Circle>
+
+          <Circle ref={div1Ref}>
+            <Image
+              src="/logo/next.png"
+              width={100}
+              height={100}
+              className="w-8 h-8 object-contain"
+              alt="next"
             />
           </Circle>
         </div>
@@ -121,12 +121,36 @@ export function AnimatedBeamMultipleOutputDemo({
         </div>
       </div>
 
-      <AnimatedBeam containerRef={containerRef} fromRef={div1Ref} toRef={div6Ref} />
-      <AnimatedBeam containerRef={containerRef} fromRef={div2Ref} toRef={div6Ref} />
-      <AnimatedBeam containerRef={containerRef} fromRef={div3Ref} toRef={div6Ref} />
-      <AnimatedBeam containerRef={containerRef} fromRef={div4Ref} toRef={div6Ref} />
-      <AnimatedBeam containerRef={containerRef} fromRef={div5Ref} toRef={div6Ref} />
-      <AnimatedBeam containerRef={containerRef} fromRef={div6Ref} toRef={div7Ref} />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div1Ref}
+        toRef={div6Ref}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div2Ref}
+        toRef={div6Ref}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div3Ref}
+        toRef={div6Ref}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div4Ref}
+        toRef={div6Ref}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div5Ref}
+        toRef={div6Ref}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div6Ref}
+        toRef={div7Ref}
+      />
     </div>
   );
 }

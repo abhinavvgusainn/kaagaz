@@ -21,18 +21,34 @@ import { Element, Link as ScrollLink } from "react-scroll";
 ───────────────────────────────────────────── */
 
 const CLIENTS = [
-  { name: "Shamiana", href: "https://www.instagram.com/shamianaudaipur?igsh=MWNlYTk4NG1semtieQ==", category: "Food & Dining" },
+  {
+    name: "Shamiana",
+    href: "https://www.instagram.com/shamianaudaipur?igsh=MWNlYTk4NG1semtieQ==",
+    category: "Food & Dining",
+  },
   { name: "Niwas", href: "#", category: "Hospitality" },
   { name: "Elara Night", href: "#", category: "Events & Nightlife" },
   { name: "Elara Stay and Resort", href: "#", category: "Hospitality" },
   { name: "Break Lo", href: "#", category: "Food & Dining" },
   { name: "Neelansh Bar & Cafe", href: "#", category: "Food & Dining" },
-  { name: "Arth Coffee House", href: "https://www.instagram.com/arthcoffeehouse?igsh=ODFzNXRveDAyYnU0", category: "Cafe" },
+  {
+    name: "Arth Coffee House",
+    href: "https://www.instagram.com/arthcoffeehouse?igsh=ODFzNXRveDAyYnU0",
+    category: "Cafe",
+  },
   { name: "Dhungaar Rest", href: "#", category: "Food & Dining" },
   { name: "Magnivibe", href: "#", category: "Lifestyle" },
-  { name: "Marutinandan Marmo", href: "https://www.Marutinandankelwa.com", category: "Materials" },
+  {
+    name: "Marutinandan Marmo",
+    href: "https://www.Marutinandankelwa.com",
+    category: "Materials",
+  },
   { name: "Emp. Marmo and Grani", href: "#", category: "Materials" },
-  { name: "Syah", href: "https://www.instagram.com/syahudaipur?igsh=dzRraWUwbTA0NHpl", category: "Food & Dining" },
+  {
+    name: "Syah",
+    href: "https://www.instagram.com/syahudaipur?igsh=dzRraWUwbTA0NHpl",
+    category: "Food & Dining",
+  },
 ];
 
 const TESTIMONIALS = [
@@ -92,13 +108,22 @@ export default function Home() {
             <Link href={"#"} className="hover:text-blue-500 transition-colors">
               Home
             </Link>
-            <Link href={"/showcase"} className="hover:text-blue-500 transition-colors">
+            <Link
+              href={"/showcase"}
+              className="hover:text-blue-500 transition-colors"
+            >
               Showcase
             </Link>
-            <Link href={"/services"} className="hover:text-blue-500 transition-colors">
+            <Link
+              href={"/services"}
+              className="hover:text-blue-500 transition-colors"
+            >
               Services
             </Link>
-            <Link href={"/story"} className="hover:text-blue-500 transition-colors">
+            <Link
+              href={"/story"}
+              className="hover:text-blue-500 transition-colors"
+            >
               Story
             </Link>
           </div>
@@ -123,14 +148,15 @@ export default function Home() {
       {/* ── Hero ── */}
       <main className="md:pb-10">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
-          <AnimatedShinyTextDemo />
+          {/* <AnimatedShinyTextDemo /> */}
 
           <h1>
             <CoverDemo />
           </h1>
 
           <p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-500">
-            Schedule a call with us to discuss your project and get a quote in minutes
+            Schedule a call with us to discuss your project and get a quote in
+            minutes
           </p>
 
           <div className="flex md:justify-center items-center gap-x-4">
@@ -147,6 +173,25 @@ export default function Home() {
                 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
             >
               Showcase
+            </Link>
+          </div>
+
+          {/* ✅ Mobile-only buttons added */}
+          <div className="flex gap-x-4 mt-4 md:hidden">
+            <Link
+              href={"/services"}
+              className="flex-1 text-center py-3 px-10 border-4 border-black rounded-[6px] bg-white
+               hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
+            >
+              Services
+            </Link>
+
+            <Link
+              href={"/story"}
+              className="flex-1 text-center py-3 px-10 border-4 border-black rounded-[6px] bg-white
+               hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
+            >
+              Story
             </Link>
           </div>
 
@@ -172,14 +217,18 @@ export default function Home() {
                 <div>
                   <h1 className="text-blue-500 text-3xl md:text-5xl">
                     <NumberTicker value={10} />+
-                    <p className="text-gray-500 text-sm md:text-md">Happy Clients</p>
+                    <p className="text-gray-500 text-sm md:text-md">
+                      Happy Clients
+                    </p>
                   </h1>
                 </div>
                 <div className="w-px bg-gray-300 self-stretch" />
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
                     <NumberTicker value={60} />+
-                    <p className="text-gray-500 text-sm md:text-md">Projects Completed</p>
+                    <p className="text-gray-500 text-sm md:text-md">
+                      Projects Completed
+                    </p>
                   </h1>
                 </div>
               </div>
@@ -218,7 +267,8 @@ export default function Home() {
             </h2>
           </div>
           <p className="text-neutral-500 text-sm md:max-w-xs md:text-right">
-            From local cafes to resort brands — we help businesses of every size grow their digital presence.
+            From local cafes to resort brands — we help businesses of every size
+            grow their digital presence.
           </p>
         </div>
 
@@ -235,7 +285,9 @@ export default function Home() {
                 <p className="font-semibold text-neutral-900 group-hover:text-blue-500 transition-colors">
                   {client.name}
                 </p>
-                <p className="text-xs text-neutral-400 mt-0.5">{client.category}</p>
+                <p className="text-xs text-neutral-400 mt-0.5">
+                  {client.category}
+                </p>
               </div>
               <svg
                 className="w-4 h-4 text-neutral-300 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all duration-200 shrink-0"
@@ -243,7 +295,12 @@ export default function Home() {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </Link>
           ))}
@@ -251,7 +308,10 @@ export default function Home() {
 
         {/* subtle bottom note */}
         <p className="text-center text-neutral-400 text-xs mt-8">
-          + many more. <Link href="/showcase" className="text-blue-500 hover:underline">See our full showcase →</Link>
+          + many more.{" "}
+          <Link href="/showcase" className="text-blue-500 hover:underline">
+            See our full showcase →
+          </Link>
         </p>
       </section>
 
@@ -261,14 +321,27 @@ export default function Home() {
           <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
             Our{" "}
             <span className="text-blue-500 flex gap-x-1 items-center">
-              <Image src={"/icons/squiggle.svg"} width={10000} height={10000} className="w-6" alt="" />
+              <Image
+                src={"/icons/squiggle.svg"}
+                width={10000}
+                height={10000}
+                className="w-6"
+                alt=""
+              />
               Creative
-              <Image src={"/icons/star.svg"} width={10000} height={10000} className="w-6 mb-8" alt="" />
+              <Image
+                src={"/icons/star.svg"}
+                width={10000}
+                height={10000}
+                className="w-6 mb-8"
+                alt=""
+              />
             </span>{" "}
             Process
           </h1>
           <p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-            All of our services are designed to help your business to get noticed.
+            All of our services are designed to help your business to get
+            noticed.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
@@ -315,7 +388,9 @@ export default function Home() {
                   {t.name[0]}
                 </div>
                 <div>
-                  <p className="text-neutral-900 text-sm font-semibold">{t.name}</p>
+                  <p className="text-neutral-900 text-sm font-semibold">
+                    {t.name}
+                  </p>
                   {/* <p className="text-neutral-400 text-xs">{t.role}</p> */}
                 </div>
               </div>
@@ -329,16 +404,24 @@ export default function Home() {
         <div className="rounded-3xl bg-neutral-900 text-white px-8 md:px-14 py-14 relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.03] pointer-events-none"
-            style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "20px 20px" }}
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #fff 1px, transparent 1px)",
+              backgroundSize: "20px 20px",
+            }}
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-3">Why Kaagaz</p>
+              <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-3">
+                Why Kaagaz
+              </p>
               <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
                 We treat your brand like it's our own.
               </h2>
               <p className="text-neutral-400 mt-5 leading-relaxed text-sm md:text-base">
-                No outsourcing, no middlemen. Every project is handled by our in-house team who are invested in your results — not just your invoice.
+                No outsourcing, no middlemen. Every project is handled by our
+                in-house team who are invested in your results — not just your
+                invoice.
               </p>
               <Link
                 href="/services"

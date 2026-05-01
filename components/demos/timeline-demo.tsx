@@ -4,148 +4,140 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
+      title: "Sep 2025",
       content: (
-        <div className="">
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+        <div>
+          <p className="mb-2 text-sm font-semibold text-neutral-900">
+            It started with an open mic.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <p className="mb-6 text-sm font-normal text-neutral-600 leading-relaxed">
+            No office. No plan. Just a few of us in Dehradun who thought local
+            businesses and local talent deserved better than what they were
+            getting. So we started doing events — open mics, poetry nights,
+            artist meetups at cafes around the city. We handled everything: the
+            concept, the promotion, the execution. Rooms filled up. People came
+            back. Something was working.
+          </p>
+          <div className="grid grid-cols-2 gap-3">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
+              src="/timeline/1.png"
+              alt=""
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
+              src="/timeline/2.png"
+              alt=""
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
           </div>
         </div>
       ),
     },
     {
-      title: "Early 2023",
+      title: "Nov 2025",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="mb-2 text-sm font-semibold text-neutral-900">
+            More people. More work.
           </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+          <p className="mb-6 text-sm font-normal text-neutral-600 leading-relaxed">
+            Word got around. Designers, photographers, writers — people who were
+            good at what they did but had nowhere to do it — started joining. We
+            took on social media for local businesses. Cafes, restaurants, small
+            brands. Most of them had never really invested in their online
+            presence. We changed that, and it showed in their footfall.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-3">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
+              src="/timeline/3.png"
+              alt=""
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
+              src="/timeline/4.png"
+              alt=""
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
           </div>
         </div>
       ),
     },
     {
-      title: "Changelog",
+      title: "Early 2026",
       content: (
         <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
+          <p className="mb-2 text-sm font-semibold text-neutral-900">
+            We built our first website.
           </p>
-          <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Card grid component
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
+          <p className="mb-6 text-sm font-normal text-neutral-600 leading-relaxed">
+            Clients started asking for more than social media. So we delivered
+            more. Our first web project was for Maruti Nandan Marmo & Grani — a
+            marble and granite supplier operating from Rajasthan with global
+            reach. They had a great business and zero digital presence. We built
+            them something they were proud of. So were we.
+          </p>
+          <div className="grid grid-cols-2 gap-3">
+            <img
+              src="/timeline/5.png"
+              alt="Maruti Nandan"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
+            />
+            <img
+              src="/timeline/6.png"
+              alt=""
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
+            />
           </div>
-          <div className="grid grid-cols-2 gap-4">
+        </div>
+      ),
+    },
+    {
+      title: "Today",
+      content: (
+        <div>
+          <p className="mb-2 text-sm font-semibold text-neutral-900">
+            Two teams. Still the same idea.
+          </p>
+          <p className="mb-6 text-sm font-normal text-neutral-600 leading-relaxed">
+            We recently connected with a talented group in Udaipur. Good people,
+            good instincts — just needed structure. It was a natural fit. Now
+            Kaagaz runs as two teams, Dehradun and Udaipur, doing the same work
+            we always have: helping businesses look and feel like the best
+            version of themselves. Eight months in. Nowhere near done.
+          </p>
+          <div className="grid grid-cols-2 gap-3 mb-5">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
+              src="/timeline/7.png"
+              alt=""
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
+              src="/timeline/8.png"
+              alt=""
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
           </div>
         </div>
       ),
     },
   ];
+
   return (
     <div className="relative w-full overflow-clip">
       <Timeline data={data} />
