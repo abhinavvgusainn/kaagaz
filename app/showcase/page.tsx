@@ -311,7 +311,7 @@ function EventsSection() {
       <div className="mt-6 flex flex-wrap gap-6">
         {[
           { label: "Total Events", val: EVENTS.length },
-          { label: "Venues", val: [...new Set(EVENTS.map((e) => e.venue))].length },
+          { label: "Venues", val: Array.from(new Set(EVENTS.map((e) => e.venue))).length },
           { label: "Free Events", val: EVENTS.filter((e) => e.price === "Free").length },
           { label: "Cities", val: 2 },
         ].map((s) => (
