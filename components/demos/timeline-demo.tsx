@@ -20,14 +20,14 @@ export function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-3">
             <img
-              src="/timeline/1.png"
+              src="/timeline/1.webp"
               alt=""
               width={500}
               height={500}
               className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="/timeline/2.png"
+              src="/timeline/2.webp"
               alt=""
               width={500}
               height={500}
@@ -53,14 +53,14 @@ export function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-3">
             <img
-              src="/timeline/3.png"
+              src="/timeline/3.webp"
               alt=""
               width={500}
               height={500}
               className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="/timeline/4.png"
+              src="/timeline/4.webp"
               alt=""
               width={500}
               height={500}
@@ -86,14 +86,14 @@ export function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-3">
             <img
-              src="/timeline/5.png"
+              src="/timeline/5.webp"
               alt="Maruti Nandan"
               width={500}
               height={500}
               className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="/timeline/6.png"
+              src="/timeline/6.webp"
               alt=""
               width={500}
               height={500}
@@ -119,14 +119,14 @@ export function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-3 mb-5">
             <img
-              src="/timeline/7.png"
+              src="/timeline/7.webp"
               alt=""
               width={500}
               height={500}
               className="h-20 w-full rounded-xl object-cover shadow-md md:h-44 lg:h-52"
             />
             <img
-              src="/timeline/8.png"
+              src="/timeline/8.webp"
               alt=""
               width={500}
               height={500}

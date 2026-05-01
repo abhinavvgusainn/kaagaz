@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-10 pb-10 border-b border-neutral-100">
             {/* Brand */}
             <div className="flex flex-col gap-3 md:w-1/3">
-              <Image src={"/logo/logo.png"} width={1000} height={1000} className="w-36" alt="Logo" />
+              <Image src={"/logo/kaagaz.png"} width={1000} height={1000} className="w-36" alt="Logo" />
               <p className="text-neutral-500 text-sm leading-relaxed">
                 A full-service digital studio helping businesses grow  through design, development, and strategy.
               </p>

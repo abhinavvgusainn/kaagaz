@@ -95,7 +95,7 @@ export default function Home() {
       >
         <Link href={"/"}>
           <Image
-            src={"/logo/logo.png"}
+            src={"/logo/kaagaz.png"}
             alt="Logo"
             width={1000}
             height={1000}
