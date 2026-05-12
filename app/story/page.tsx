@@ -1,5 +1,5 @@
 import { TimelineDemo } from "@/components/demos/timeline-demo";
-import ShowcaseNavbar from "@/components/showcase-navbar";
+import Navbar from "@/components/navbar";
 import { div } from "motion/react-client";
 
 const Story = () => {
@@ -12,7 +12,7 @@ const Story = () => {
         bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
         bg-[size:14px_24px]"
     >
-      <ShowcaseNavbar />
+      <Navbar />
 
       <TimelineDemo />
     </div>

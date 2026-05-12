@@ -2,7 +2,7 @@
 
 import Footer from "@/components/footer";
 import WordFadeIn from "@/components/magicui/word-fade-in";
-import ShowcaseNavbar from "@/components/showcase-navbar";
+import Navbar from "@/components/navbar";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import { useState } from "react";
 import Image from "next/image";
@@ -342,7 +342,7 @@ const Showcase = () => {
       <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa]
           bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
           bg-[size:14px_24px]">
-        <ShowcaseNavbar />
+        <Navbar />
 
         <section className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
 

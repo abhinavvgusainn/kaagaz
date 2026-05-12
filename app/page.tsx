@@ -8,6 +8,7 @@ import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocit
 import Footer from "@/components/footer";
 import BoxReveal from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
+import Navbar from "@/components/navbar";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import { IconStarFilled } from "@tabler/icons-react";
@@ -23,7 +24,22 @@ import { Element, Link as ScrollLink } from "react-scroll";
 const CLIENTS = [
   {
     name: "Shamiana",
-    href: "https://www.instagram.com/shamianaudaipur?igsh=MWNlYTk4NG1semtieQ==",
+    href: "https://www.shamianaudaipur.com/",
+    category: "Food & Dining",
+  },
+  {
+    name: "Marutinandan Marmo",
+    href: "https://www.Marutinandankelwa.com",
+    category: "Materials",
+  },
+  {
+    name: "Arth Coffee House",
+    href: "https://www.instagram.com/arthcoffeehouse?igsh=ODFzNXRveDAyYnU0",
+    category: "Cafe",
+  },
+  {
+    name: "Syah",
+    href: "https://www.instagram.com/syahudaipur?igsh=dzRraWUwbTA0NHpl",
     category: "Food & Dining",
   },
   { name: "Niwas", href: "#", category: "Hospitality" },
@@ -31,33 +47,18 @@ const CLIENTS = [
   { name: "Elara Stay and Resort", href: "#", category: "Hospitality" },
   { name: "Break Lo", href: "#", category: "Food & Dining" },
   { name: "Neelansh Bar & Cafe", href: "#", category: "Food & Dining" },
-  {
-    name: "Arth Coffee House",
-    href: "https://www.instagram.com/arthcoffeehouse?igsh=ODFzNXRveDAyYnU0",
-    category: "Cafe",
-  },
   { name: "Dhungaar Rest", href: "#", category: "Food & Dining" },
   { name: "Magnivibe", href: "#", category: "Lifestyle" },
-  {
-    name: "Marutinandan Marmo",
-    href: "https://www.Marutinandankelwa.com",
-    category: "Materials",
-  },
   { name: "Emp. Marmo and Grani", href: "#", category: "Materials" },
-  {
-    name: "Syah",
-    href: "https://www.instagram.com/syahudaipur?igsh=dzRraWUwbTA0NHpl",
-    category: "Food & Dining",
-  },
 ];
 
 const TESTIMONIALS = [
   {
-    quote:
-      "We've been working with Kaagaz for over 8 months and they've been amazing. They've helped us grow our business and we couldn't be happier with the results.",
-    name: "Dhruv Bansal",
-    // role: "CEO, Arth Coffee House",
-    rating: 5,
+  quote:
+    "Kaagaz helped us build a professional online presence that brought in better quality leads and international inquiries for our marble and glass supply business.",
+  name: "Nitilaksh Pareek",
+  // role: "Founder, Elara Night",
+  rating: 5,
   },
   {
     quote:
@@ -68,9 +69,9 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "From concept to launch in three weeks. The Kaagaz team understood our vibe for Elara Night instantly — the microsite sold out our opening party.",
-    name: "Nikhil Sharma",
-    // role: "Founder, Elara Night",
+      "We've been working with Kaagaz for over 8 months and they've been amazing. They've helped us grow our business and we couldn't be happier with the results.",
+    name: "Dhruv Bansal",
+    // role: "CEO, Arth Coffee House",
     rating: 5,
   },
 ];
@@ -87,63 +88,7 @@ export default function Home() {
         bg-[size:14px_24px]"
     >
       {/* ── Navbar ── */}
-      <Element
-        name="top"
-        className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50
-          xl:w-4/5 2xl:w-[68%] bg-white flex items-center
-          justify-between py-6 px-4 md:px-8 mx-6 shadow-sm border border-neutral-100"
-      >
-        <Link href={"/"}>
-          <Image
-            src={"/logo/kaagaz.png"}
-            alt="Logo"
-            width={1000}
-            height={1000}
-            className="w-28"
-          />
-        </Link>
-
-        <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"#"} className="hover:text-blue-500 transition-colors">
-              Home
-            </Link>
-            <Link
-              href={"/showcase"}
-              className="hover:text-blue-500 transition-colors"
-            >
-              Showcase
-            </Link>
-            <Link
-              href={"/services"}
-              className="hover:text-blue-500 transition-colors"
-            >
-              Services
-            </Link>
-            <Link
-              href={"/story"}
-              className="hover:text-blue-500 transition-colors"
-            >
-              Story
-            </Link>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-x-4">
-          <a href="tel:7878302665" className="hidden lg:flex">
-            <button className="px-4 py-2 rounded-md flex items-center gap-x-3 text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              (787)-830-2665
-            </button>
-          </a>
-          <Link
-            href={"/meeting"}
-            className="py-3 px-6 text-lg hover:bg-[#abcbff] rounded-[6px] border-2 border-black text-white bg-[#121212] transition duration-200
-              hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
-          >
-            Book a call
-          </Link>
-        </div>
-      </Element>
+      <Navbar/>
 
       {/* ── Hero ── */}
       <main className="md:pb-10">
