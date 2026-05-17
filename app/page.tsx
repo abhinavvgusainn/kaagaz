@@ -55,7 +55,7 @@ const CLIENTS = [
 const TESTIMONIALS = [
   {
   quote:
-    "Kaagaz helped us build a professional online presence that brought in better quality leads and international inquiries for our marble and glass supply business.",
+    "Kaagaz helped us build a professional online presence that brought in better quality leads and international inquiries for our marble and granite supply business.",
   name: "Nitilaksh Pareek",
   // role: "Founder, Elara Night",
   rating: 5,
@@ -380,7 +380,7 @@ export default function Home() {
               {[
                 { val: "60+", label: "Projects Delivered" },
                 { val: "15+", label: "Team Members" },
-                { val: "48hr", label: "Avg. Response Time" },
+                { val: "24hr", label: "Avg. Response Time" },
                 { val: "8 months", label: "In Business" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/5 rounded-xl p-5">

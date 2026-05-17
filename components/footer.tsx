@@ -60,11 +60,11 @@ const Footer = () => {
 
               <div>
                 <p className="text-xs font-semibold text-neutral-900 uppercase tracking-widest mb-4">Contact</p>
-                <a href="tel:7878302665" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
-                  787-830-2665
+                <a href="tel:+916396837867" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                  639-683-7867
                 </a>
-                <a href="mailto:chiragpaliwal53@gmail.com" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
-                  chiragpaliwal53@gmail.com
+                <a href="mailto:kaagazinfinity53@gmail.com" className="block text-neutral-500 text-sm mb-2 hover:text-blue-500 transition-colors">
+                  kaagazinfinity53@gmail.com
                 </a>
               </div>
             </div>

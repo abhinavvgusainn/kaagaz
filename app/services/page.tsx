@@ -478,7 +478,7 @@ const ServicesPage = () => {
                 {[
                   { val: "60+", label: "Projects Delivered" },
                   { val: "15+", label: "Team Members" },
-                  { val: "48hr", label: "Avg. Response Time" },
+                  { val: "24hr", label: "Avg. Response Time" },
                   { val: "8 months", label: "In Business" },
                 ].map((s) => (
                   <div key={s.label} className="bg-white/5 rounded-xl p-5">

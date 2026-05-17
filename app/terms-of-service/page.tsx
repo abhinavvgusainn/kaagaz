@@ -76,7 +76,7 @@ export default function TermsOfService() {
       <p className="mb-4">
         For any questions:
         <br />
-        Email: chiragpaliwal53@gmail.com
+        Email: kaagazinfinity53@gmail.com
       </p>
     </main>
   );
