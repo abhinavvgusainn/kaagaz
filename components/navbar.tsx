@@ -95,7 +95,7 @@ const Navbar = () => {
       <div className="flex items-center gap-x-4 relative z-10">
         <a href="tel:5193191562" className="hidden xl:flex">
           <button className="px-4 py-2 rounded-md flex items-center gap-x-3 text-gray-800">
-            (639)-683-7867
+            (787)-830-2665
           </button>
         </a>
 
