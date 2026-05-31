@@ -48,7 +48,7 @@ const CLIENTS = [
   { name: "Break Lo", href: "#", category: "Food & Dining" },
   { name: "Neelansh Bar & Cafe", href: "#", category: "Food & Dining" },
   { name: "Dhungaar Rest", href: "#", category: "Food & Dining" },
-  { name: "Magnivibe", href: "#", category: "Lifestyle" },
+  { name: "ScoopAura", href: "#", category: "Lifestyle" },
   { name: "Emp. Marmo and Grani", href: "#", category: "Materials" },
 ];
 
@@ -170,7 +170,7 @@ export default function Home() {
                 <div className="w-px bg-gray-300 self-stretch" />
                 <div className="flex-1 min-w-0">
                   <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={60} />+
+                    <NumberTicker value={100} />+
                     <p className="text-gray-500 text-sm md:text-md">
                       Projects Completed
                     </p>
@@ -378,10 +378,10 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { val: "60+", label: "Projects Delivered" },
+                { val: "100+", label: "Projects Delivered" },
                 { val: "15+", label: "Team Members" },
                 { val: "24hr", label: "Avg. Response Time" },
-                { val: "8 months", label: "In Business" },
+                { val: "9 months", label: "In Business" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/5 rounded-xl p-5">
                   <p className="text-2xl font-bold text-white">{s.val}</p>

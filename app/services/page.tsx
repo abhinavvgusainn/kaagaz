@@ -476,10 +476,10 @@ const ServicesPage = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { val: "60+", label: "Projects Delivered" },
+                  { val: "100+", label: "Projects Delivered" },
                   { val: "15+", label: "Team Members" },
                   { val: "24hr", label: "Avg. Response Time" },
-                  { val: "8 months", label: "In Business" },
+                  { val: "9 months", label: "In Business" },
                 ].map((s) => (
                   <div key={s.label} className="bg-white/5 rounded-xl p-5">
                     <p className="text-2xl font-bold text-white">{s.val}</p>
