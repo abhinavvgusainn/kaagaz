@@ -1,2 +1,2 @@
 Live-
-https://kagazinfinity.com/
+https://kagaz-infinity.netlify.app/
