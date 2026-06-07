@@ -1,4 +1,4 @@
 This is official code for our digital service agency
 
 Kaagaz Infinity
-https://kaagazinfinity.com/
+https://kagazinfinity.com/
