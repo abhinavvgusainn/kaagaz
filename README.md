@@ -1,4 +1,2 @@
-This is official code for our digital service agency
-
-Kaagaz Infinity
-https://kaagazinfinity.com/
+Live-
+https://kagaz-infinity.netlify.app/
