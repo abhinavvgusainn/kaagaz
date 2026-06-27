@@ -12,10 +12,12 @@ import Navbar from "@/components/navbar";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import { IconStarFilled } from "@tabler/icons-react";
+import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
 import { Element, Link as ScrollLink } from "react-scroll";
+import GitHubCTA from "@/components/ui/github";
 
 /* ─────────────────────────────────────────────
    DATA
@@ -258,6 +260,10 @@ export default function Home() {
             See our full showcase →
           </Link>
         </p>
+      </section>
+
+      <section className="px-6 md:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+        <GitHubCTA />
       </section>
 
       {/* ── Process ── */}

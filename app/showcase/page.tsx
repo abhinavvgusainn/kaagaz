@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import { useState } from "react";
 import Image from "next/image";
+import GitHubCTA from "@/components/ui/github";
 
 /* ─────────────────────────────────────────────
    PROJECTS DATA  (agency work only)
@@ -47,6 +48,18 @@ const PROJECTS: Project[] = [
   image: "/show/s2.png",
   gradient: "linear-gradient(135deg,#1a1510 0%,#2e2418 50%,#1a1510 100%)",
   href: "https://www.kaagazinfinity.com/",
+},
+{
+  id: 3,
+  title: "Scoop Aura",
+  tags: ["E-commerce", "Full-Stack", "Razorpay"],
+  year: "2026",
+  description:
+    "E-commerce platform for curated mystery scoops, featuring a seamless shopping experience, secure Razorpay payments, and a responsive checkout flow.",
+  accent: "#C026D3",
+  image: "/show/s3.png",
+  gradient: "linear-gradient(135deg,#1a1510 0%,#2e2418 50%,#1a1510 100%)",
+  href: "https://scoopaura.netlify.app/",
 }
   // Add more website/branding projects here as you build them
 ];
@@ -379,22 +392,7 @@ const Showcase = () => {
               ))}
             </div>
 
-            {/* Growing portfolio nudge */}
-            <div className="mt-8 rounded-2xl border border-neutral-100 bg-white px-8 py-7 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <p className="text-xs font-medium text-neutral-400 uppercase tracking-widest mb-1">Growing Portfolio</p>
-                <h3 className="text-base font-semibold text-neutral-900">More work on the way.</h3>
-                <p className="text-neutral-500 text-sm mt-1">
-                  We're a young studio — every project we take on gets added here. Check back soon.
-                </p>
-              </div>
-              <a
-                href="/meeting"
-                className="shrink-0 px-6 py-3 bg-neutral-900 text-white rounded-xl text-sm font-semibold hover:bg-neutral-700 transition-colors"
-              >
-                Start a project →
-              </a>
-            </div>
+            <GitHubCTA />
           </div>
 
           {/* ── Events (separated) ── */}
@@ -461,7 +459,6 @@ const Showcase = () => {
               </div>
             </div>
           </div>
-
           <LetsMakeThingsHappenSection />
         </section>
 
